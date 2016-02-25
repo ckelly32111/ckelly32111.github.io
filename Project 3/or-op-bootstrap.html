@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Or Operator</title>
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+  
+  
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+ 
+  <script>
+    $(document).bind('mobileinit',function(){
+        $.mobile.pushStateEnabled = false;
+    });
+  </script>
+
+  
+  <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+
+  </head>
+  <body>
+
+    <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<nav class="navbar navbar-default navbar-inverse" role="navigation">
+				<div class="navbar-header">
+					 
+					
+				</div>
+				
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	
+
+					<ul class="nav navbar-nav navbar-left">
+						
+					</ul>
+				</div>
+				
+			</nav>
+			<div class="jumbotron">
+				<h2>
+					The "Or" Operator
+				</h2>
+				<p>
+					The "OR" operator is used when you want either or both of the operands to be true or present in the data.
+				</p>
+				<p>
+					<a href="binary-ops-bootstrap.html" target="">Home »</a>
+				</p>
+
+			</div>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>
+							x
+						</th>
+						<th>
+							y
+						</th>
+						<th>
+							x || y
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							0
+						</td>
+						<td>
+							0
+						</td>
+						<td>
+							0
+						</td>
+					</tr>
+					<tr>
+						<td>
+							0
+						</td>
+						<td>
+							1
+						</td>
+						<td>
+							1
+						</td>
+					</tr>
+					<tr>
+						<td>
+							1
+						</td>
+						<td>
+							0
+						</td>
+						<td>
+							1
+						</td>
+					</tr>
+					<tr>
+						<td>
+							1
+						</td>
+						<td>
+							1
+						</td>
+						<td>
+							1
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+  </body>
+</html>

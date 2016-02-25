@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Binary Operators</title>
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div data-role="page">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="binary-ops-ch2.html" target="_blank">
+
+          Information</a>
+        </li>
+        <li><a href="binary-ops-ch3.html" class="ui-btn-active ui-state-persist">
+
+          Interface</a>
+        </li>
+      </ul>
+    </div>
+    <div data-role="content">
+      <label for="A">A:</label>
+      <input type='number' name='A' id='A' min='0'
+      max='999'>
+      <label for="B">B:</label>
+      <input type='number' name='B' id='B' min='0'
+      max='999'>
+      <br>
+      <button class="button">
+        AND
+      </button>
+       <button class="button">
+        OR
+      </button>
+       <button class="button">
+        NOT
+      </button>
+       <button class="button">
+        XOR
+      </button>
+      <br>
+      <table id="data">
+        <tr>
+          <td>A:</td>
+          <td id='ADisplay'>0</td>
+        </tr>
+        <tr>
+          <td>B:</td>
+          <td id='BDisplay'>0</td>
+        </tr>
+      </table>
+    </div>
+    <div data-role=footer>
+      <small>
+
+	 Binary Operations
+
+      </small>
+    </div>
+  </div>
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type='text/javascript' src='scripts/binary-ops-ch3.js'></script>
+    <script>
+    $(document).bind('mobileinit', function() {
+        $.mobile.pushStateEnabled = false;
+    });
+    </script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</body>
+
+</html>
